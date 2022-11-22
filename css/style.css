@@ -172,7 +172,7 @@ h3 {
 /* MAIN */
 
 .main-sect {
-  padding-top: 78px;
+  padding-top: 50px;
 }
 
 .main-slider {
@@ -327,10 +327,6 @@ h3 {
   align-items: center;
 }
 
-.work-wrapper-block{
-  font-size: 0;
-}
-
 .work-list__item a {
   transition: var(--transition);
   font-size: 18px;
@@ -343,6 +339,10 @@ h3 {
 
 .work-list__item:not(:last-child) {
   margin-right: 85px;
+}
+
+.work-block{
+  margin-right: 20px;
 }
 
 .work-block__title {

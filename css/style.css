@@ -321,19 +321,23 @@ h3 {
   margin-bottom: 45px;
 }
 
-.work-wrapper {
+.work-wrapper.active{
   display: flex;
+}
+
+.work-wrapper {
+  display: none;
   justify-content: space-between;
   align-items: center;
 }
 
-.work-list__item a {
+.work-list__item button {
   transition: var(--transition);
   font-size: 18px;
   line-height: 22px;
 }
 
-.work-list__item.active {
+.work-list__item.active button {
   color: #E1670E;
 }
 

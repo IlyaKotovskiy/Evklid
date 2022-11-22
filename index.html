@@ -13,7 +13,8 @@
   <!-- FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -150,28 +151,28 @@
           Как мы работаем
         </h2>
         <ul class="work-list">
-          <li class="work-list__item active">
-            <a href="#">
+          <li class="work-list__item active" data-step="1">
+            <button type="button">
               1 шаг
-            </a>
+            </button>
           </li>
-          <li class="work-list__item">
-            <a href="#">
+          <li class="work-list__item" data-step="2">
+            <button type="button">
               2 шаг
-            </a>
+            </button>
           </li>
-          <li class="work-list__item">
-            <a href="#">
+          <li class="work-list__item" data-step="3">
+            <button type="button">
               3 шаг
-            </a>
+            </button>
           </li>
-          <li class="work-list__item">
-            <a href="#">
+          <li class="work-list__item" data-step="4">
+            <button type="button">
               4 шаг
-            </a>
+            </button>
           </li>
         </ul>
-        <div class="work-wrapper">
+        <div class="work-wrapper active" data-work="1">
           <div class="work-block">
             <h3 class="work-block__title">
               Проводим консультацию
@@ -198,6 +199,84 @@
             <source class="work-wrapper__img" media="(max-width: 768px)" srcset="img/work-img-768.jpg">
             <source class="work-wrapper__img" media="(max-width: 1024px)" srcset="img/work-img-1024.jpg">
             <img class="work-wrapper__img" src="img/work-img1.jpg" alt="">
+          </picture>
+        </div>
+        <div class="work-wrapper" data-work="2">
+          <div class="work-block">
+            <h3 class="work-block__title">
+              Составляем смету
+            </h3>
+            <div class="work-texts">
+              <p class="work-texts__desc">
+                Внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных
+                стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими
+                инстанциями. А также представители современных социальных резервов, инициированные исключительно
+                синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины,
+                реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых
+                исследований.
+              </p>
+            </div>
+            <div class="work-btns">
+              <a href="#" class="work-btns__btn btn">Подробнее</a>
+              <a href="#" class="work-btns__btn deal-btn btn">Договор</a>
+            </div>
+          </div>
+          <picture class="work-wrapper__imgs">
+            <source class="work-wrapper__img" media="(max-width: 768px)" srcset="img/work-img2-768.jpg">
+            <source class="work-wrapper__img" media="(max-width: 1024px)" srcset="img/work-img2-1024.jpg">
+            <img class="work-wrapper__img" src="img/work-img2.png" alt="">
+          </picture>
+        </div>
+        <div class="work-wrapper" data-work="3">
+          <div class="work-block">
+            <h3 class="work-block__title">
+              Привлекаем подрядчиков
+            </h3>
+            <div class="work-texts">
+              <p class="work-texts__desc">
+                Идейные соображения высшего порядка, а также новая модель организационной деятельности требует анализа
+                прогресса профессионального сообщества. Высокий уровень вовлечения представителей целевой аудитории
+                является чётким доказательством простого факта: высококачественный прототип будущего проекта напрямую
+                зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель
+                организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание
+                показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности
+                позволяет выполнить важные задания по разработке прогресса профессионального сообщества.
+              </p>
+            </div>
+            <div class="work-btns">
+              <a href="#" class="work-btns__btn btn">Подробнее</a>
+              <a href="#" class="work-btns__btn deal-btn btn">Договор</a>
+            </div>
+          </div>
+          <picture class="work-wrapper__imgs">
+            <source class="work-wrapper__img" media="(max-width: 768px)" srcset="img/work-img3-768.jpg">
+            <source class="work-wrapper__img" media="(max-width: 1024px)" srcset="img/work-img3-1024.jpg">
+            <img class="work-wrapper__img" src="img/work-img3.jpg" alt="">
+          </picture>
+        </div>
+        <div class="work-wrapper" data-work="4">
+          <div class="work-block">
+            <h3 class="work-block__title">
+              Инспектируем все этапы работ
+            </h3>
+            <div class="work-texts">
+              <p class="work-texts__desc">
+                Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого
+                факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития.
+                Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит
+                о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное
+                информационно-пропагандистское обеспечение нашей деятельности позволяет.
+              </p>
+            </div>
+            <div class="work-btns">
+              <a href="#" class="work-btns__btn btn">Подробнее</a>
+              <a href="#" class="work-btns__btn deal-btn btn">Договор</a>
+            </div>
+          </div>
+          <picture class="work-wrapper__imgs">
+            <source class="work-wrapper__img" media="(max-width: 768px)" srcset="img/work-img4-768.jpg">
+            <source class="work-wrapper__img" media="(max-width: 1024px)" srcset="img/work-img4-1024.jpg">
+            <img class="work-wrapper__img" src="img/work-img4.jpg" alt="">
           </picture>
         </div>
       </div>

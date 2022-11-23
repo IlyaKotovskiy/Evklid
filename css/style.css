@@ -44,8 +44,6 @@ button {
   border: none;
   cursor: pointer;
   padding: 0;
-  color: #000;
-  -webkit-appearance: none;
 }
 
 ul,
@@ -180,11 +178,51 @@ h3 {
 .main-slider {
   padding: 100px 80px;
   border-radius: var(--border-radius);
-  background-image: url('../img/main-img1.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  box-sizing: border-box;
 }
+
+.slider-img1 {
+  background-image: url('../img/main-img1.jpg');
+}
+
+.slider-img2 {
+  background-image: url('../img/main-img2.jpg');
+}
+
+.slider-img3 {
+  background-image: url('../img/main-img3.jpg');
+}
+
+/* SWIPER START */
+
+.swiper {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-pagination-bullet{
+  width: 15px;
+  height: 15px;
+  background-color: #CACACA;
+}
+
+.swiper-pagination-bullet-active{
+  background-color: #fff;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+  margin: 0 10px;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+  bottom: 30px;
+}
+
+/* SWIPER END */
 
 .main-slider__title {
   font-weight: 800;
@@ -267,7 +305,7 @@ h3 {
   justify-content: space-between;
 }
 
-.block-desc-mob{
+.block-desc-mob {
   display: none;
 }
 
@@ -323,7 +361,7 @@ h3 {
   margin-bottom: 45px;
 }
 
-.work-wrapper.active{
+.work-wrapper.active {
   display: flex;
 }
 
@@ -347,7 +385,7 @@ h3 {
   margin-right: 85px;
 }
 
-.work-block{
+.work-block {
   margin-right: 20px;
 }
 
@@ -420,7 +458,24 @@ h3 {
   transition: var(--transition);
 }
 
-.questions-list__btn p{
+.questions-list__text {
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.questions-list__item.active .questions-list__text{
+  visibility: visible;
+}
+
+.questions-list__text p:not(:last-child){
+  margin-bottom: 32px;
+}
+
+.questions-list__text p:last-child{
+  margin-bottom: 40px;
+}
+
+.questions-list__btn p {
   font-family: "Montserrat", "sans-serif";
   font-weight: 700;
   font-size: 24px;
@@ -711,7 +766,8 @@ textarea.field {
   background-color: orange;
 }
 
-.questions-list__btn:active .questions-list__icon {
+.questions-list__btn:active .questions-list__icon,
+.questions-list__item.active .questions-list__icon {
   transform: translateY(-50%) rotate(45deg);
 }
 

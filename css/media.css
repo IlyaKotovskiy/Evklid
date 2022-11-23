@@ -189,7 +189,18 @@
 
   .main-slider {
     padding: 160px 77px;
-    background-image: url(../img/main-img-1024.jpg);
+  }
+
+  .slider-img1{
+    background-image: url('../img/main-img-1024.jpg');
+  }
+
+  .slider-img2{
+    background-image: url('../img/main-img2-1024.jpg');
+  }
+
+  .slider-img3{
+    background-image: url('../img/main-img3-1024.jpg');
   }
 
   .main-slider__title {
@@ -399,10 +410,34 @@
 
   .main-slider {
     padding: 60px 21px;
-    background-image: url('../img/main-img-320.jpg');
     border-radius: 16px;
     text-align: center;
   }
+
+  .slider-img1 {
+    background-image: url('../img/main-img-320.jpg');
+  }
+
+  .slider-img2 {
+    background-image: url('../img/main-img2-320.jpg');
+  }
+
+  .slider-img3 {
+    background-image: url('../img/main-img3-320.jpg');
+  }
+
+  /* SWIPER START */
+
+  .swiper-pagination-bullet{
+    width: 10px;
+    height: 10px;
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 15px;
+  }
+
+  /* SWIPER END */
 
   .main-slider__title {
     font-size: 20px;

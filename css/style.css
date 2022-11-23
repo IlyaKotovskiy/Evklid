@@ -44,6 +44,8 @@ button {
   border: none;
   cursor: pointer;
   padding: 0;
+  color: #000;
+  -webkit-appearance: none;
 }
 
 ul,

@@ -421,7 +421,9 @@
   .header-form {
     width: 100vw;
     z-index: 55;
-    padding: 21px 15px;
+    top: 0;
+    border-radius: 0px 0px 24px 24px;
+    padding: 22px 15px;
   }
 
   .header-form__search{
@@ -723,9 +725,5 @@
 
   .header-form__btn-search {
     margin-left: auto;
-  }
-
-  .header-form {
-    border-radius: 0px 0px 24px 24px;
   }
 }

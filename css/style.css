@@ -179,31 +179,40 @@ h3 {
 
 .main-slider {
   padding: 100px 80px;
-  border-radius: var(--border-radius);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
 }
 
-.slider-img1 {
+.slide-img1 {
   background-image: url('../img/main-img1.jpg');
 }
 
-.slider-img2 {
+.slide-img2 {
   background-image: url('../img/main-img2.jpg');
 }
 
-.slider-img3 {
+.slide-img3 {
   background-image: url('../img/main-img3.jpg');
 }
 
 /* SWIPER START */
 
 .swiper {
-  width: 100%;
-  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border-radius: var(--border-radius);
 }
+.swiper-slide {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+
 
 .swiper-pagination-bullet{
   width: 15px;

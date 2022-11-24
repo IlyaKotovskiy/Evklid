@@ -44,7 +44,7 @@ const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
-  spaceBetween: 30,
+  // spaceBetween: 30,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,             // клакабельная пагинация

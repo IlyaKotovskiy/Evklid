@@ -724,4 +724,8 @@
   .header-form__btn-search {
     margin-left: auto;
   }
+
+  .header-form {
+    border-radius: 0px 0px 24px 24px;
+  }
 }

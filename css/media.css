@@ -69,8 +69,17 @@
     max-width: 954px;
   }
 
-  .header-wrapper__hamburger{
+  .header-wrapper__hamburger {
     z-index: 51;
+  }
+
+  .header-form {
+    width: 50vw;
+    right: 0;
+  }
+
+  .header-form__search {
+    width: 77%;
   }
 
   .nav {
@@ -103,7 +112,7 @@
     margin-bottom: 60px;
   }
 
-  .nav.active{
+  .nav.active {
     visibility: visible;
     transform: none;
   }
@@ -140,6 +149,7 @@
 
   .header-wrapper {
     justify-content: space-between;
+    position: unset;
   }
 
   .header-wrapper__logo {
@@ -191,15 +201,15 @@
     padding: 160px 77px;
   }
 
-  .slider-img1{
+  .slider-img1 {
     background-image: url('../img/main-img-1024.jpg');
   }
 
-  .slider-img2{
+  .slider-img2 {
     background-image: url('../img/main-img2-1024.jpg');
   }
 
-  .slider-img3{
+  .slider-img3 {
     background-image: url('../img/main-img3-1024.jpg');
   }
 
@@ -288,6 +298,14 @@
 
   .header {
     padding: 10px 0;
+  }
+
+  .header-form {
+    width: 75vw;
+  }
+
+  .header-form__search {
+    width: 83%;
   }
 
   .main-slider {
@@ -391,13 +409,32 @@
     max-width: 570px;
   }
 
-  .nav{
+  .nav {
     min-width: 0;
     width: 100vw;
   }
 
   .header {
     padding: 16px 0;
+  }
+
+  .header-form {
+    width: 100vw;
+    z-index: 55;
+    padding: 21px 15px;
+  }
+
+  .header-form__search{
+    margin-right: 0;
+    width: 87%;
+  }
+
+  .header-form__search::placeholder {
+    font-size: 16px;
+  }
+
+  .header-form__btn-search {
+    margin-right: 20px;
   }
 
   .header-wrapper__logo img {
@@ -428,12 +465,13 @@
 
   /* SWIPER START */
 
-  .swiper-pagination-bullet{
+  .swiper-pagination-bullet {
     width: 10px;
     height: 10px;
   }
 
-  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+  .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
     bottom: 15px;
   }
 
@@ -675,5 +713,15 @@
 
   .footer-link-item:not(:last-child) {
     margin-right: 16px;
+  }
+}
+
+@media screen and (max-width: 456px) {
+  .header-form__search {
+    width: 70vw;
+  }
+
+  .header-form__btn-search {
+    margin-left: auto;
   }
 }

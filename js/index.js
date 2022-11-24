@@ -39,6 +39,15 @@ tabsBtn.forEach(function (elem) {
   });
 });
 
+// SEARCH
+document.querySelector('.header-wrapper__btn-search').addEventListener('click', () => {
+  document.querySelector('.header-form').classList.add('active');
+});
+
+document.querySelector('.header-form__btn-cancel').addEventListener('click', () => {
+  document.querySelector('.header-form').classList.remove('active');
+});
+
 // SWIPER
 const swiper = new Swiper('.swiper', {
   // Optional parameters

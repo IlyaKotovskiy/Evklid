@@ -63,6 +63,9 @@ const swiper = new Swiper('.swiper', {
     disableOnInteraction: false, // продолжает autoplay если пользователь повзаимодействовал со слайдером или слайдом
     pauseOnMouseEnter: true,     // если курсор находиться в зоне слайда, то autoplay остановиться. Иначе false
   },
+  a11y: {
+    paginationBulletMessage: 'Перейти к слайду {{index}}',   // русская озвучка пагинации
+  },
 });
 
 // ACCORDION
